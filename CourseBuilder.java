@@ -1,8 +1,8 @@
 public interface CourseBuilder {
-    void setName(String name);
-    void setInstructor (String instructor);
-    void setCourseType(String courseType);
-    void setCredits(int credits);
-    void setSchedule(String schedule);
+    CourseBuilder name(String name);
+    CourseBuilder instructor (String instructor);
+    CourseBuilder courseType(String courseType);
+    CourseBuilder credits(int credits);
+    CourseBuilder schedule(String schedule);
     Course build();
 }
