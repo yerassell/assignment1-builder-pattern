@@ -25,7 +25,7 @@ public class Director {
     public Course createWEB(OnlineCourseBuilder builder){
         return builder
                 .platform("learn")
-                .meetingLink("https://learn.astanait.edu.kz")
+                .platformLink("https://learn.astanait.edu.kz")
                 .recordingAvailable(false)
                 .name("WEB technologies")
                 .instructor("Makhmetova K.B.")
@@ -37,7 +37,7 @@ public class Director {
     public Course createOS(OnlineCourseBuilder builder){
         return builder
                 .platform("learn")
-                .meetingLink("https://learn.astanait.edu.kz")
+                .platformLink("https://learn.astanait.edu.kz")
                 .recordingAvailable(false)
                 .name("Operating Systems")
                 .instructor("Zhanbayev N.")
