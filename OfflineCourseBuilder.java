@@ -1,7 +1,7 @@
 public class OfflineCourseBuilder implements CourseBuilder{
     private Course course;
     private String roomNumber;
-    private boolean computerAvailable;
+    private boolean computersAvailable;
     public OfflineCourseBuilder() {
         course = new Course();
     }
@@ -19,9 +19,9 @@ public class OfflineCourseBuilder implements CourseBuilder{
         course.setRoomNumber(roomNumber);
         return this;
     }
-    public OfflineCourseBuilder computerAvailable(boolean computerAvailable) {
-        this.computerAvailable = computerAvailable;
-        course.setComputersAvailable(computerAvailable);
+    public OfflineCourseBuilder computersAvailable(boolean computersAvailable) {
+        this.computersAvailable = computersAvailable;
+        course.setComputersAvailable(computersAvailable);
         return this;
     }
 
