@@ -12,6 +12,8 @@ public class Course {
     private String meetingLink;
     private boolean recordingAvailable;
 
+    public Course() {}
+
     public Course(String name, String instructor, String courseType, int credits, String schedule, String roomNumber, boolean computerAvailable, String platform, String meetingLink, boolean recordingAvailable){
         this.name = name;
         this.instructor = instructor;
