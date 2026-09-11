@@ -17,6 +17,18 @@ public class OfflineCourseBuilder implements CourseBuilder{
     }
 
     public Course build(){
+        if (course.getName() == null || course.getName().isEmpty()){
+            throw new IllegalStateException("Course name is required");
+        }
+        if (course.getInstructor() == null || course.getInstructor().isEmpty()){
+            throw new IllegalStateException("Instructor is required");
+        }
+        if (course.getSchedule() == null || course.getSchedule().isEmpty()){
+            throw new IllegalStateException("Course schedule is required");
+        }
+        if (course.getMeetingLink() == null || course.getMeetingLink().isEmpty()){
+            throw new IllegalStateException("Meeting link to the platform is required");
+        }
         return course;
     }
 
