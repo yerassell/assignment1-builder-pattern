@@ -26,8 +26,8 @@ public class OfflineCourseBuilder implements CourseBuilder{
         if (course.getSchedule() == null || course.getSchedule().isEmpty()){
             throw new IllegalStateException("Course schedule is required");
         }
-        if (course.getMeetingLink() == null || course.getMeetingLink().isEmpty()){
-            throw new IllegalStateException("Meeting link to the platform is required");
+        if (course.getRoomNumber() == null || course.getRoomNumber().isEmpty()){
+            throw new IllegalStateException("Classroom number is required");
         }
         return course;
     }
