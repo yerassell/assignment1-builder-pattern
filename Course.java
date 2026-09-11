@@ -14,14 +14,14 @@ public class Course {
 
     public Course() {}
 
-    public Course(String name, String instructor, String courseType, int credits, String schedule, String roomNumber, boolean computerAvailable, String platform, String meetingLink, boolean recordingAvailable){
+    public Course(String name, String instructor, String courseType, int credits, String schedule, String roomNumber, boolean computersAvailable, String platform, String meetingLink, boolean recordingAvailable){
         this.name = name;
         this.instructor = instructor;
         this.courseType = courseType;
         this.credits = credits;
         this.schedule = schedule;
         this.roomNumber = roomNumber;
-        this.computersAvailable = computerAvailable;
+        this.computersAvailable = computersAvailable;
         this.platform = platform;
         this.meetingLink = meetingLink;
         this.recordingAvailable = recordingAvailable;
