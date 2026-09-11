@@ -1,6 +1,6 @@
 public class Course {
     private String name;                //name of the course
-    private String instructor;          
+    private String instructor;
     private String courseType;          //lecture or practice
     private int credits;
     private String schedule;            //date and time: Monday 14:00
@@ -8,13 +8,13 @@ public class Course {
     private String  roomNumber;         //C1.3.140
     private boolean computersAvailable;
     //Online Courses Format
-    private String platform;            //Microsoft Teams or Learn
-    private String meetingLink;
+    private String platform;            //Microsoft Teams or learn.astanait.edu.kz
+    private String platformLink;        //e.g: https://learn.astanait.edu.kz
     private boolean recordingAvailable;
 
     public Course() {}
 
-    public Course(String name, String instructor, String courseType, int credits, String schedule, String roomNumber, boolean computersAvailable, String platform, String meetingLink, boolean recordingAvailable){
+    public Course(String name, String instructor, String courseType, int credits, String schedule, String roomNumber, boolean computersAvailable, String platform, String platformLink, boolean recordingAvailable){
         this.name = name;
         this.instructor = instructor;
         this.courseType = courseType;
@@ -23,7 +23,7 @@ public class Course {
         this.roomNumber = roomNumber;
         this.computersAvailable = computersAvailable;
         this.platform = platform;
-        this.meetingLink = meetingLink;
+        this.platformLink = platformLink;
         this.recordingAvailable = recordingAvailable;
     }
 
@@ -35,7 +35,7 @@ public class Course {
     public String getRoomNumber(){return roomNumber;}
     public boolean isComputersAvailable(){return computersAvailable;}
     public String getPlatform(){return platform;}
-    public String getMeetingLink(){return meetingLink;}
+    public String getPlatformLink(){return platformLink;}
     public boolean isRecordingAvailable(){return recordingAvailable;}
 
     public void setName(String name) {this.name = name;}
@@ -46,7 +46,7 @@ public class Course {
     public void setRoomNumber(String roomNumber) {this.roomNumber = roomNumber;}
     public void setComputersAvailable(boolean computersAvailable) {this.computersAvailable = computersAvailable;}
     public void setPlatform(String platform) {this.platform = platform;}
-    public void setMeetingLink(String meetingLink) {this.meetingLink = meetingLink;}
+    public void setPlatformLink(String platformLink) {this.platformLink = platformLink;}
     public void setRecordingAvailable(boolean recordingAvailable) {this.recordingAvailable = recordingAvailable;}
 
     @Override
@@ -60,7 +60,7 @@ public class Course {
                 ", roomNumber='" + roomNumber + '\'' +
                 ", computersAvailable=" + computersAvailable +
                 ", platform='" + platform + '\'' +
-                ", meetingLink='" + meetingLink + '\'' +
+                ", platformLink='" + platformLink + '\'' +
                 ", recordingAvailable=" + recordingAvailable +
                 '}';
     }
