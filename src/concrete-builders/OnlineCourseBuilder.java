@@ -1,6 +1,6 @@
 public class OnlineCourseBuilder implements CourseBuilder{
     private final Course course = new Course();
-    
+
     public CourseBuilder name(String name) {course.setName(name);return this;}
     public CourseBuilder instructor(String instructor) {course.setInstructor(instructor);return this;}
     public CourseBuilder courseType(String courseType) {course.setCourseType(courseType);return this;}
@@ -11,8 +11,8 @@ public class OnlineCourseBuilder implements CourseBuilder{
         course.setPlatform(platform);
         return this;
     }
-    public OnlineCourseBuilder meetingLink(String meetingLink) {
-        course.setMeetingLink(meetingLink);
+    public OnlineCourseBuilder platformLink(String platformLink) {
+        course.setPlatformLink(platformLink);
         return this;
     }
     public OnlineCourseBuilder recordingAvailable(boolean recordingAvailable) {
@@ -30,8 +30,8 @@ public class OnlineCourseBuilder implements CourseBuilder{
         if (course.getSchedule() == null || course.getSchedule().isEmpty()){
             throw new IllegalStateException("Course schedule is required");
         }
-        if (course.getMeetingLink() == null || course.getMeetingLink().isEmpty()){
-            throw new IllegalStateException("Meeting link to the platform is required");
+        if (course.getPlatformLink() == null || course.getPlatformLink().isEmpty()){
+            throw new IllegalStateException("Link to the platform is required");
         }
         return course;
     }
