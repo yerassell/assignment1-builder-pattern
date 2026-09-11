@@ -1,6 +1,6 @@
 public class Course {
-    private String name;
-    private String instructor;
+    private String name;                //name of the course
+    private String instructor;          
     private String courseType;          //lecture or practice
     private int credits;
     private String schedule;            //date and time: Monday 14:00
@@ -8,7 +8,7 @@ public class Course {
     private String  roomNumber;         //C1.3.140
     private boolean computersAvailable;
     //Online Courses Format
-    private String platform;            //Microsoft Teams or learn.astanait.edu.kz
+    private String platform;            //Microsoft Teams or Learn
     private String meetingLink;
     private boolean recordingAvailable;
 
