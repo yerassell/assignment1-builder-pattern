@@ -16,5 +16,13 @@ Components:
 - The Director provides four recipes that are createAMCS(builder), createSDP(builder) for offline courses, and createWEB(builder), createOS(builder) for online courses.
 
 ## How to run it?
-javac Main.java
-java Main
+- Open the terminal and use cd command to navigate to exact folder
+  ```bash
+  cd path/to/your/folder
+  ```
+
+- Compile the code and run the program
+  ```bash
+  javac Main.java
+  java Main
+  ```
