@@ -1,7 +1,9 @@
 public class Director {
     public Course createAMCS(OfflineCourseBuilder builder){
         return builder
-                .roomNumber("IEC-306")                          //the Concrete Builder methods go first because main shared setters will return CourseBuilder and hide Concrete builders
+                //the Concrete Builder methods go first because shared setters 
+                // will return CourseBuilder and hide Concrete builders
+                .roomNumber("IEC-306")                         
                 .computersAvailable(false)
                 .name("Analytical Methods in Computer Science")
                 .instructor("Zhandaulet Y.Z.")
